@@ -3,13 +3,13 @@ Guide to deploying a Hugo built static site on Linode's Object storage.
 
 ```
 git pull git@github.com:abalarin/hopeworks-demo.git
-git pull --recurse-submodules
+cd hopework-demo
+git submodule update --init --recursive
 
 hugo -v
 
-s3cmd ws-create --ws-index=index.html --ws-error=404.html s3://demo-test
-
-s3cmd ws-info s3://demo-site
-
-s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ s3://demo-site
+s3cmd mb s3://unique-bucket-name
+s3cmd ws-create --ws-index=index.html --ws-error=404.html s3://unique-bucket-name
+s3cmd ws-info s3://unique-bucket-name
+s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ s3://unique-bucket-name
 ```
