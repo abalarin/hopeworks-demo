@@ -10,7 +10,7 @@ A quick guide to deploying a Hugo built static site on Linode's Object storage. 
 ### Grab Source Code
 ```
 # Clone this github repository
-git clone git@github.com:abalarin/hopeworks-demo.git
+git clone https://github.com/abalarin/hopeworks-demo.git
 
 # navigate into the newly created directory
 cd hopework-demo
@@ -44,7 +44,7 @@ hugo -v
 # init your bucket as a website
 s3cmd ws-create --ws-index=index.html --ws-error=404.html s3://unique-bucket-name
 
-# retrive info about your bucket (to verify you;ve vonfigured it properly)
+# retrive info about your bucket (to verify you've configured it properly)
 s3cmd ws-info s3://unique-bucket-name
 
 # upload your static site to your bucket
