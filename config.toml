@@ -51,10 +51,10 @@ disqusShortname = "yourdiscussshortname"
     url = "https://twitter.com/johndoe/"
 
 # Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
+#[[menu.main]]
+#    name = "Blog"
+#    weight = 1
+#    url  = "/posts/"
 [[menu.main]]
     name = "About"
     weight = 2
