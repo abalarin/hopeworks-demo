@@ -54,3 +54,6 @@ s3cmd --no-mime-magic --acl-public --delete-removed --delete-after sync public/ 
 ```
 
 If you've done everything correctly you should be able to see your site at your object storage buckets endpoint: `s3cmd ws-info s3://your-bucket`
+
+# Extra
+Checkout out Linode's section on setting up a [custom domain for your bucket](https://www.linode.com/docs/platform/object-storage/host-static-site-object-storage/#optional-next-steps).
