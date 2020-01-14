@@ -7,6 +7,8 @@ A quick guide to deploying a Hugo built static site on Linode's Object storage. 
 - [Install s3cmd](https://s3tools.org/s3cmd)
     - [Configure s3cmd for Linodes Object Storage](https://www.linode.com/docs/platform/object-storage/how-to-use-object-storage/#install-and-configure-s3cmd)
 
+_To deploy a site without using the command line see [Deploying wity Cyberduck](https://github.com/abalarin/hopeworks-demo/blob/master/Cyberduck.md)_
+
 ### Grab Source Code
 ```
 # Clone this github repository
